@@ -4,7 +4,7 @@ const itemSchema = new mongoose.Schema(
   {
     term: { type: String, required: true }, // the word/letter in the target language
     translit: { type: String, required: true }, // pronunciation in Roman script
-    meaning: { type: String, required: true }, // meaning (English for hi/mr, Hindi for en)
+    meaning: { type: String, required: true }, // meaning (English for hi/mr/te, Hindi for en)
     example: { type: String, default: '' }, // example sentence / usage
   },
   { _id: false }
@@ -12,7 +12,7 @@ const itemSchema = new mongoose.Schema(
 
 const lessonSchema = new mongoose.Schema(
   {
-    language: { type: String, required: true, enum: ['hi', 'mr', 'en'], index: true },
+    language: { type: String, required: true, enum: ['hi', 'mr', 'en', 'te'], index: true },
     category: { type: String, required: true, enum: ['alphabet', 'words', 'phrases'] },
     title: { type: String, required: true },
     description: { type: String, default: '' },

@@ -1,4 +1,4 @@
-// The 3 languages offered in the app
+// The 4 languages offered in the app
 const LANGUAGES = [
   {
     code: 'hi',
@@ -29,6 +29,16 @@ const LANGUAGES = [
     emoji: '📘',
     color: '#3B82F6',
     lightColor: '#DBEAFE',
+  },
+  {
+    code: 'te',
+    name: 'Telugu',
+    nativeName: 'తెలుగు',
+    script: 'Telugu',
+    description: 'The Italian of the East',
+    emoji: '🌾',
+    color: '#8B5CF6',
+    lightColor: '#EDE9FE',
   },
 ];
 
