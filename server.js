@@ -4,7 +4,7 @@ const connectDB = require('./src/db/db');
 const PORT = process.env.PORT || 3000;
 
 connectDB().then(() => {
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Bhasha API is running on port ${PORT}`);
   });
 });
